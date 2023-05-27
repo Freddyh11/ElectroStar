@@ -13,6 +13,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    App_Util.h \
     Playlist.h \
     Song.h \
     mainwindow.h
