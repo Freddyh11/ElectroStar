@@ -14,17 +14,28 @@ using std::string;
 using std::unordered_map;
 using std::vector;
 
-unordered_map<string, Song> app_songlist{};
-unordered_map<string, Playlist> app_playlists{};
+/// App_Util.h
+/// ----------
+/// Contains all global data, as well as core functions
 
-Playlist *selected_playlist{};
 
+// Global data
+
+unordered_map<string, Song> app_songlist{}; // Global list of songs (see Song.h)
+unordered_map<string, Playlist> app_playlists{}; // Global list of playlists (see Playlist.h)
+
+Playlist *selected_playlist{}; // Pointer to the selected playlist (see selectPlaylistc function below)
+
+// Core Functions
+
+// Used by classes
 string getString() {
     string str{};
     std::getline(cin, str);
     return str;
 }
 
+// Used by classes
 vector<string> getStrings() {
     string input_string{};
     std::getline(cin, input_string);
@@ -37,6 +48,8 @@ vector<string> getStrings() {
     return strings;
 }
 
+
+// All below functions directly interact with back-end, self-explanatory
 void songImport(string name, vector<string> tags, int weight) {
     Song newsong{name, true, tags, weight};
     app_songlist.insert({name, newsong});
