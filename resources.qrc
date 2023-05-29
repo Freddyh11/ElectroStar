@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/images">
         <file>MP3.png</file>
+        <file>Queued.png</file>
     </qresource>
 </RCC>

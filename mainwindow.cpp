@@ -7,11 +7,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap pix(":/images/MP3.png");
-    if (pix.isNull()){
-        qDebug() << "Failed to load image";
-    }
-    ui->MP3_IMG->setPixmap(pix);
+    QPixmap mp3_img(":/images/MP3.png"); // Current dimensions: Width=256, Height=261
+    ui->MP3_IMG->setPixmap(mp3_img);
+    QPixmap queued_img(":/images/Queued.png"); // Current dimensions: Width=250, Height=146
+    ui->queued_IMG->setPixmap(queued_img);
 }
 
 MainWindow::~MainWindow()
