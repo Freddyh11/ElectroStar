@@ -10,13 +10,15 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    testingfile.cpp
 
 HEADERS += \
     App_Util.h \
     Playlist.h \
     Song.h \
-    mainwindow.h
+    mainwindow.h \
+    testingfile.h
 
 FORMS += \
     mainwindow.ui
