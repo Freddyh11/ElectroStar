@@ -7,6 +7,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    QPixmap pix(":/images/MP3.png");
+    if (pix.isNull()){
+        qDebug() << "Failed to load image";
+    }
+    ui->MP3_IMG->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()

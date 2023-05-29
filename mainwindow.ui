@@ -160,20 +160,17 @@
      <string>Song 6</string>
     </property>
    </widget>
-   <widget class="QFrame" name="myFrame">
+   <widget class="QLabel" name="MP3_IMG">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>50</y>
-      <width>401</width>
-      <height>321</height>
+      <x>320</x>
+      <y>20</y>
+      <width>256</width>
+      <height>261</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
@@ -183,7 +180,7 @@
      <x>0</x>
      <y>0</y>
      <width>679</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHello_World">
