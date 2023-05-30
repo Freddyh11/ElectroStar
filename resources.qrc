@@ -2,5 +2,6 @@
     <qresource prefix="/images">
         <file>MP3.png</file>
         <file>Queued.png</file>
+        <file>MainScreen.png</file>
     </qresource>
 </RCC>
