@@ -688,6 +688,19 @@
     <zorder>pushButton_3</zorder>
     <zorder>pushButton_4</zorder>
    </widget>
+   <widget class="QPushButton" name="actionMiniplayer">
+    <property name="geometry">
+     <rect>
+      <x>623</x>
+      <y>56</y>
+      <width>29</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>MP3_IMG</zorder>
    <zorder>queued_IMG</zorder>
    <zorder>MainScreen_IMG</zorder>
@@ -702,6 +715,7 @@
    <zorder>actionNext</zorder>
    <zorder>actionEject</zorder>
    <zorder>frame</zorder>
+   <zorder>actionMiniplayer</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

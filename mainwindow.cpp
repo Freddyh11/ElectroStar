@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "miniwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->actionStart->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionStop->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionVibe->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->actionMiniplayer->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->pushButton->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->pushButton_2->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->pushButton_3->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
@@ -36,5 +38,12 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_actionMiniplayer_clicked()
+{
+    MiniWindow *miniplayer_window = new MiniWindow();
+    miniplayer_window->show();
+    close();
 }
 

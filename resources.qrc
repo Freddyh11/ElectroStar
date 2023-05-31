@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/images">
-        <file>MP3.png</file>
-        <file>Queued.png</file>
         <file>MainScreen.jpg</file>
+        <file>MiniplayerScreen.jpg</file>
     </qresource>
 </RCC>
