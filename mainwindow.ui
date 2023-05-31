@@ -462,144 +462,53 @@
    <widget class="QPushButton" name="actionClear">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
+      <x>30</x>
+      <y>0</y>
       <width>51</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Clear</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="actionVibe">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>20</y>
+      <x>100</x>
+      <y>0</y>
       <width>51</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Vibes</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="actionSongs">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>20</y>
-      <width>51</width>
+      <x>170</x>
+      <y>0</y>
+      <width>41</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Songs</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="actionHelp">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>20</y>
-      <width>61</width>
+      <x>230</x>
+      <y>0</y>
+      <width>51</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Help</string>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>50</y>
-      <width>211</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 1</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>100</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 2</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 3</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>160</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 4</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>190</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 5</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_6">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>191</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Song 6</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="MP3_IMG">
@@ -654,6 +563,165 @@
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="actionStop">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>51</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionBack">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>290</y>
+      <width>41</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionStart">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>290</y>
+      <width>51</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionPause">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>290</y>
+      <width>51</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionNext">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>290</y>
+      <width>51</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionEject">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>290</y>
+      <width>51</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>241</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_4</zorder>
+   </widget>
+   <zorder>MP3_IMG</zorder>
+   <zorder>queued_IMG</zorder>
+   <zorder>actionVibe2</zorder>
+   <zorder>MainScreen_IMG</zorder>
+   <zorder>actionHelp</zorder>
+   <zorder>actionClear</zorder>
+   <zorder>actionSongs</zorder>
+   <zorder>actionVibe</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder></zorder>
+   <zorder>actionStop</zorder>
+   <zorder>actionBack</zorder>
+   <zorder>actionStart</zorder>
+   <zorder>actionPause</zorder>
+   <zorder>actionNext</zorder>
+   <zorder>actionEject</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
