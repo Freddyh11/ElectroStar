@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>706</width>
-    <height>750</height>
+    <width>680</width>
+    <height>728</height>
    </rect>
   </property>
   <property name="palette">
@@ -462,8 +462,8 @@
    <widget class="QPushButton" name="actionClear">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>0</y>
+      <x>10</x>
+      <y>2</y>
       <width>51</width>
       <height>32</height>
      </rect>
@@ -475,8 +475,8 @@
    <widget class="QPushButton" name="actionVibe">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>0</y>
+      <x>80</x>
+      <y>2</y>
       <width>51</width>
       <height>32</height>
      </rect>
@@ -488,9 +488,9 @@
    <widget class="QPushButton" name="actionSongs">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>0</y>
-      <width>41</width>
+      <x>145</x>
+      <y>2</y>
+      <width>51</width>
       <height>32</height>
      </rect>
     </property>
@@ -501,8 +501,8 @@
    <widget class="QPushButton" name="actionHelp">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>0</y>
+      <x>210</x>
+      <y>2</y>
       <width>51</width>
       <height>32</height>
      </rect>
@@ -537,26 +537,13 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="actionVibe2">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>140</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="MainScreen_IMG">
     <property name="geometry">
      <rect>
-      <x>-20</x>
-      <y>-35</y>
-      <width>764</width>
-      <height>775</height>
+      <x>-54</x>
+      <y>-30</y>
+      <width>768</width>
+      <height>768</height>
      </rect>
     </property>
     <property name="text">
@@ -566,7 +553,7 @@
    <widget class="QPushButton" name="actionStop">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>345</x>
       <y>290</y>
       <width>51</width>
       <height>101</height>
@@ -579,7 +566,7 @@
    <widget class="QPushButton" name="actionBack">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>395</x>
       <y>290</y>
       <width>41</width>
       <height>101</height>
@@ -592,7 +579,7 @@
    <widget class="QPushButton" name="actionStart">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>435</x>
       <y>290</y>
       <width>51</width>
       <height>101</height>
@@ -605,7 +592,7 @@
    <widget class="QPushButton" name="actionPause">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>485</x>
       <y>290</y>
       <width>51</width>
       <height>101</height>
@@ -618,7 +605,7 @@
    <widget class="QPushButton" name="actionNext">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>535</x>
       <y>290</y>
       <width>51</width>
       <height>101</height>
@@ -631,7 +618,7 @@
    <widget class="QPushButton" name="actionEject">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>585</x>
       <y>290</y>
       <width>51</width>
       <height>101</height>
@@ -641,12 +628,12 @@
      <string/>
     </property>
    </widget>
-   <widget class="QFrame" name="">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>40</y>
-      <width>241</width>
+      <width>232</width>
       <height>301</height>
      </rect>
     </property>
@@ -703,25 +690,18 @@
    </widget>
    <zorder>MP3_IMG</zorder>
    <zorder>queued_IMG</zorder>
-   <zorder>actionVibe2</zorder>
    <zorder>MainScreen_IMG</zorder>
    <zorder>actionHelp</zorder>
    <zorder>actionClear</zorder>
    <zorder>actionSongs</zorder>
    <zorder>actionVibe</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder></zorder>
    <zorder>actionStop</zorder>
    <zorder>actionBack</zorder>
    <zorder>actionStart</zorder>
    <zorder>actionPause</zorder>
    <zorder>actionNext</zorder>
    <zorder>actionEject</zorder>
+   <zorder>frame</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
