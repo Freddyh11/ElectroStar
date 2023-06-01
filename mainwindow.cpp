@@ -66,3 +66,20 @@ void MainWindow::on_actionEdit_clicked()
     }
 }
 
+
+void MainWindow::on_actionVibe_clicked()
+{
+    if (state != Vibes){
+        QPixmap vibes_img(":/images/MainScreenVibes.jpg");
+        ui->MainScreen_IMG->setPixmap(vibes_img);
+        ui->frame->setVisible(false);
+        this->setState(Vibes);
+    }
+    else{
+        QPixmap songs_img(":/images/MainScreen.jpg");
+        ui->MainScreen_IMG->setPixmap(songs_img);
+        ui->frame->setVisible(true);
+        this->setState(Songs);
+    }
+}
+

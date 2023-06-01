@@ -22,6 +22,8 @@ private slots:
 
     void on_actionEdit_clicked();
 
+    void on_actionVibe_clicked();
+
 private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
