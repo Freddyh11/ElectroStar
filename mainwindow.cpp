@@ -1,17 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "miniwindow.h"
+#include "helpwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    //QPixmap mp3_img(":/images/MP3.png"); // Current dimensions: Width=256, Height=261
-    //ui->MP3_IMG->setPixmap(mp3_img);
-    //QPixmap queued_img(":/images/Queued.png"); // Current dimensions: Width=250, Height=146
-    //ui->queued_IMG->setPixmap(queued_img);
 
     QPixmap mainscreen_img(":/images/MainScreen.jpg");
     ui->MainScreen_IMG->setPixmap(mainscreen_img);
@@ -80,6 +76,23 @@ void MainWindow::on_actionVibe_clicked()
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
+    }
+}
+
+void MainWindow::on_actionHelp_clicked()
+{
+    if(state != Vibes){
+        QPixmap help_img(":/images/MainScreenVibes.jpg");
+        ui->MainScreen_IMG->setPixmap(help_img);
+        ui->frame->setVisible(false);
+        this->setState(Vibes);
+    }
+    else{
+        QPixmap help_img(":/images/HelpWindow.jpg");
+        ui->MainScreen_IMG->setPixmap(help_img);
+        ui->frame->setVisible(true);
+        this->setState(Help);
+
     }
 }
 

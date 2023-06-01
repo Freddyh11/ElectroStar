@@ -10,9 +10,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
 
-    //w.setStyleSheet("background-color:Gold; color: Black;");
-
-
     w.show();
     return a.exec();
 }

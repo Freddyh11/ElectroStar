@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    helpwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     miniwindow.cpp
@@ -17,11 +18,13 @@ HEADERS += \
     App_Util.h \
     Playlist.h \
     Song.h \
+    helpwindow.h \
     mainwindow.h \
     mainwindow_states.h \
     miniwindow.h
 
 FORMS += \
+    helpwindow.ui \
     mainwindow.ui \
     miniwindow.ui
 
