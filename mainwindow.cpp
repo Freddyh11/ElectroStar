@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap mainscreen_img(":/images/MainScreen.jpg");
+    QPixmap mainscreen_img(":/images/MainScreen.png");
     ui->MainScreen_IMG->setPixmap(mainscreen_img);
 
     ui->actionBack->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
@@ -51,13 +51,13 @@ void MainWindow::on_actionMiniplayer_clicked()
 void MainWindow::on_actionEdit_clicked()
 {
     if (state != Edit){
-        QPixmap edit_img(":/images/MainScreenEdit.jpg");
+        QPixmap edit_img(":/images/MainScreenEdit.png");
         ui->MainScreen_IMG->setPixmap(edit_img);
         ui->frame->setVisible(false);
         this->setState(Edit);
     }
     else{
-        QPixmap songs_img(":/images/MainScreen.jpg");
+        QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
@@ -68,13 +68,13 @@ void MainWindow::on_actionEdit_clicked()
 void MainWindow::on_actionVibe_clicked()
 {
     if (state != Vibes){
-        QPixmap vibes_img(":/images/MainScreenVibes.jpg");
+        QPixmap vibes_img(":/images/MainScreenVibes.png");
         ui->MainScreen_IMG->setPixmap(vibes_img);
         ui->frame->setVisible(false);
         this->setState(Vibes);
     }
     else{
-        QPixmap songs_img(":/images/MainScreen.jpg");
+        QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
@@ -84,15 +84,15 @@ void MainWindow::on_actionVibe_clicked()
 void MainWindow::on_actionHelp_clicked()
 {
     if(state != Help){
-        QPixmap help_img(":/images/MainScreenHelp.jpg");
+        QPixmap help_img(":/images/MainScreenHelp.png");
         ui->MainScreen_IMG->setPixmap(help_img);
         ui->frame->setVisible(false);
         this->setState(Help);
     }
     else{
-        QPixmap songs_img(":/images/MainScreen.jpg");
+        QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
-        ui->frame->setVisible(false);
+        ui->frame->setVisible(true);
         this->setState(Songs);
 
     }

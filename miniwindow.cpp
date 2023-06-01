@@ -9,7 +9,7 @@ MiniWindow::MiniWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QPixmap miniscreen_img(":/images/MiniplayerScreen.jpg");
+    QPixmap miniscreen_img(":/images/MiniplayerScreen.png");
     ui->MiniScreen_IMG->setPixmap(miniscreen_img);
 
     ui->actionMainwindow->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");

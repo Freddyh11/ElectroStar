@@ -1,9 +1,9 @@
 <RCC>
     <qresource prefix="/images">
-        <file>MainScreen.jpg</file>
-        <file>MiniplayerScreen.jpg</file>
-        <file>MainScreenEdit.jpg</file>
-        <file>MainScreenVibes.jpg</file>
-        <file>MainScreenHelp.jpg</file>
+        <file>MiniplayerScreen.png</file>
+        <file>MainScreen.png</file>
+        <file>MainScreenEdit.png</file>
+        <file>MainScreenHelp.png</file>
+        <file>MainScreenVibes.png</file>
     </qresource>
 </RCC>
