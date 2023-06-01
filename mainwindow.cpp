@@ -81,17 +81,17 @@ void MainWindow::on_actionVibe_clicked()
 
 void MainWindow::on_actionHelp_clicked()
 {
-    if(state != Vibes){
-        QPixmap help_img(":/images/MainScreenVibes.jpg");
-        ui->MainScreen_IMG->setPixmap(help_img);
-        ui->frame->setVisible(false);
-        this->setState(Vibes);
-    }
-    else{
-        QPixmap help_img(":/images/HelpWindow.jpg");
+    if(state != Help){
+        QPixmap help_img(":/images/MainScreenHelp.jpg");
         ui->MainScreen_IMG->setPixmap(help_img);
         ui->frame->setVisible(false);
         this->setState(Help);
+    }
+    else{
+        QPixmap songs_img(":/images/MainScreen.jpg");
+        ui->MainScreen_IMG->setPixmap(songs_img);
+        ui->frame->setVisible(false);
+        this->setState(Songs);
 
     }
 }
