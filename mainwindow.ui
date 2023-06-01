@@ -485,7 +485,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="actionSongs">
+   <widget class="QPushButton" name="actionHelp">
     <property name="geometry">
      <rect>
       <x>145</x>
@@ -498,7 +498,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="actionHelp">
+   <widget class="QPushButton" name="actionEdit">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -704,9 +704,9 @@
    <zorder>MP3_IMG</zorder>
    <zorder>queued_IMG</zorder>
    <zorder>MainScreen_IMG</zorder>
-   <zorder>actionHelp</zorder>
+   <zorder>actionEdit</zorder>
    <zorder>actionClear</zorder>
-   <zorder>actionSongs</zorder>
+   <zorder>actionHelp</zorder>
    <zorder>actionVibe</zorder>
    <zorder>actionStop</zorder>
    <zorder>actionBack</zorder>

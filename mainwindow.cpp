@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->actionHelp->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionNext->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionPause->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionSongs->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->actionEdit->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionStart->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionStop->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->actionVibe->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
@@ -45,5 +45,13 @@ void MainWindow::on_actionMiniplayer_clicked()
     MiniWindow *miniplayer_window = new MiniWindow();
     miniplayer_window->show();
     close();
+}
+
+
+void MainWindow::on_actionEdit_clicked()
+{
+    QPixmap edit_img(":/images/MainScreenEdit.jpg");
+    ui->MainScreen_IMG->setPixmap(edit_img);
+    ui->frame->setVisible(false);
 }
 

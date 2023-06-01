@@ -2,5 +2,6 @@
     <qresource prefix="/images">
         <file>MainScreen.jpg</file>
         <file>MiniplayerScreen.jpg</file>
+        <file>MainScreenEdit.jpg</file>
     </qresource>
 </RCC>

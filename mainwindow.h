@@ -18,6 +18,8 @@ public:
 private slots:
     void on_actionMiniplayer_clicked();
 
+    void on_actionEdit_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
