@@ -29,6 +29,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->pushButton_4->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->pushButton_5->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
     ui->pushButton_6->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->pushButton_7->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->pushButton_8->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->pushButton_9->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
 }
 
 MainWindow::~MainWindow()

@@ -543,7 +543,7 @@
       <x>-54</x>
       <y>-30</y>
       <width>768</width>
-      <height>768</height>
+      <height>767</height>
      </rect>
     </property>
     <property name="text">
@@ -632,9 +632,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>40</y>
+      <y>35</y>
       <width>232</width>
-      <height>301</height>
+      <height>442</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -680,6 +680,27 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
     </layout>
     <zorder>pushButton_2</zorder>
     <zorder>pushButton_5</zorder>
@@ -687,6 +708,9 @@
     <zorder>pushButton</zorder>
     <zorder>pushButton_3</zorder>
     <zorder>pushButton_4</zorder>
+    <zorder>pushButton_7</zorder>
+    <zorder>pushButton_8</zorder>
+    <zorder>pushButton_9</zorder>
    </widget>
    <widget class="QPushButton" name="actionMiniplayer">
     <property name="geometry">
