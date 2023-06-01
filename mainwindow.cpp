@@ -90,7 +90,7 @@ void MainWindow::on_actionHelp_clicked()
     else{
         QPixmap help_img(":/images/HelpWindow.jpg");
         ui->MainScreen_IMG->setPixmap(help_img);
-        ui->frame->setVisible(true);
+        ui->frame->setVisible(false);
         this->setState(Help);
 
     }
