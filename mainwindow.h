@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include  "mainwindow_states.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +15,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void setState(MainWindowStates s);
 
 private slots:
     void on_actionMiniplayer_clicked();
@@ -22,5 +24,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    MainWindowStates state{Songs};
 };
 #endif // MAINWINDOW_H

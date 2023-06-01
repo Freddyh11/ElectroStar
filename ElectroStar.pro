@@ -18,6 +18,7 @@ HEADERS += \
     Playlist.h \
     Song.h \
     mainwindow.h \
+    mainwindow_states.h \
     miniwindow.h
 
 FORMS += \

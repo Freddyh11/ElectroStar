@@ -40,6 +40,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::setState(MainWindowStates s) { state = s; }
+
 void MainWindow::on_actionMiniplayer_clicked()
 {
     MiniWindow *miniplayer_window = new MiniWindow();
@@ -50,8 +52,17 @@ void MainWindow::on_actionMiniplayer_clicked()
 
 void MainWindow::on_actionEdit_clicked()
 {
-    QPixmap edit_img(":/images/MainScreenEdit.jpg");
-    ui->MainScreen_IMG->setPixmap(edit_img);
-    ui->frame->setVisible(false);
+    if (state != Edit){
+        QPixmap edit_img(":/images/MainScreenEdit.jpg");
+        ui->MainScreen_IMG->setPixmap(edit_img);
+        ui->frame->setVisible(false);
+        this->setState(Edit);
+    }
+    else{
+        QPixmap songs_img(":/images/MainScreen.jpg");
+        ui->MainScreen_IMG->setPixmap(songs_img);
+        ui->frame->setVisible(true);
+        this->setState(Songs);
+    }
 }
 
