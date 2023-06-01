@@ -1,6 +1,6 @@
-#include "miniwindow.h"
+#include "ElectroStar_miniwindow.h"
 #include "ui_miniwindow.h"
-#include "mainwindow.h"
+#include "ElectroStar_mainwindow.h"
 
 
 MiniWindow::MiniWindow(QWidget *parent) :

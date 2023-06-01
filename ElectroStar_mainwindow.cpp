@@ -1,6 +1,6 @@
-#include "mainwindow.h"
+#include "ElectroStar_mainwindow.h"
 #include "ui_mainwindow.h"
-#include "miniwindow.h"
+#include "ElectroStar_miniwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

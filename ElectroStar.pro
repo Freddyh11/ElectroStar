@@ -9,21 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp \
-    miniwindow.cpp
+    ElectroStar_mainwindow.cpp \
+    ElectroStar_miniwindow.cpp \
+    main.cpp
 
 HEADERS += \
     App_Util.h \
+    ElectroStar_mainwindow.h \
+    ElectroStar_miniwindow.h \
     Playlist.h \
     Song.h \
-    mainwindow.h \
-    mainwindow_states.h \
-    miniwindow.h
+    mainwindow_states.h
 
 FORMS += \
-    mainwindow.ui \
-    miniwindow.ui
+    ElectroStar_mainwindow.ui \
+    ElectroStar_miniwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef ELECTROSTAR_MAINWINDOW_H
+#define ELECTROSTAR_MAINWINDOW_H
 
 #include <QMainWindow>
 #include  "mainwindow_states.h"
@@ -30,4 +30,4 @@ private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
 };
-#endif // MAINWINDOW_H
+#endif // ELECTROSTAR_MAINWINDOW_H

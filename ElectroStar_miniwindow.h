@@ -1,5 +1,5 @@
-#ifndef MINIWINDOW_H
-#define MINIWINDOW_H
+#ifndef ELECTROSTAR_MINIWINDOW_H
+#define ELECTROSTAR_MINIWINDOW_H
 
 #include <QDialog>
 
@@ -22,4 +22,4 @@ private:
     Ui::MiniWindow *ui;
 };
 
-#endif // MINIWINDOW_H
+#endif // ELECTROSTAR_MINIWINDOW_H
