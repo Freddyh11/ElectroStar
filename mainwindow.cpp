@@ -1,4 +1,4 @@
-#include "ElectroStar_mainwindow.h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "ElectroStar_miniwindow.h"
 

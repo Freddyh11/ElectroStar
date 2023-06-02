@@ -1,5 +1,5 @@
 #include "App_Util.h"
-#include "ElectroStar_mainwindow.h"
+#include "mainwindow.h"
 
 #include <iostream>
 #include <string>
