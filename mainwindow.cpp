@@ -5,6 +5,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , miniplayer_window(nullptr)
+
 {
     ui->setupUi(this);
 
@@ -42,13 +44,19 @@ void MainWindow::setState(MainWindowStates s) { state = s; }
 
 void MainWindow::on_actionMiniplayer_clicked()
 {
-    MiniWindow *miniplayer_window = new MiniWindow();
-    miniplayer_window->setWindowTitle("MiniPlayer");
-    miniplayer_window->show();
-    close();
+   miniplayer_window = new MiniWindow(this);
+   miniplayer_window->setWindowTitle("MiniPlayer");
+   miniplayer_window->show();
+   this->hide();
 }
 
-
+void MainWindow::on_MiniWindow_closed()  // this slot is called when MiniWindow is closed
+{
+    this->setWindowTitle("ELECTROSTAR*");
+    this->show();  // show the MainWindow again
+    delete miniplayer_window;  // delete the MiniWindow
+    miniplayer_window = nullptr;  // set the pointer back to nullptr
+}
 
 void MainWindow::on_actionEdit_clicked()
 {

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include  "mainwindow_states.h"
+#include "ElectroStar_miniwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,8 +27,12 @@ private slots:
 
     void on_actionHelp_clicked();
 
+    void on_MiniWindow_closed();
+
 private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
+    MiniWindow *miniplayer_window = nullptr;
+
 };
 #endif // MAINWINDOW_H

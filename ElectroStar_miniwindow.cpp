@@ -1,6 +1,7 @@
 #include "ElectroStar_miniwindow.h"
 #include "ui_miniwindow.h"
 #include "mainwindow.h"
+#include <QCloseEvent>
 
 
 MiniWindow::MiniWindow(QWidget *parent) :
@@ -23,7 +24,14 @@ MiniWindow::~MiniWindow()
 void MiniWindow::on_actionMainwindow_clicked()
 {
     MainWindow *main_window = new MainWindow();
+    main_window->setWindowTitle("ELECTROSTAR*");
     main_window->show();
     close();
+}
+
+void MiniWindow::closeEvent(QCloseEvent *event)
+{
+    emit closed();
+    QDialog::closeEvent(event);
 }
 
