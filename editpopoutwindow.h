@@ -15,6 +15,15 @@ public:
     explicit EditPopoutWindow(QWidget *parent = nullptr);
     ~EditPopoutWindow();
 
+private slots:
+    void on_audioimport_button_clicked();
+
+    void on_audiodelete_button_clicked();
+
+    void on_tagremove_button_clicked();
+
+    void on_tagadd_button_clicked();
+
 private:
     Ui::EditPopoutWindow *ui;
 };

@@ -42,7 +42,7 @@
     <string>Import Audio File</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="audioimport_filename_linetext">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -101,7 +101,7 @@
     <string>Filename</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="tagedit_filename_linetext">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -124,7 +124,7 @@
     <string>Tag name</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="tagedit_tagname_linetext">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -170,7 +170,7 @@
     <string>Filename</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="audiodelete_filename_linetext">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -180,7 +180,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="audioimport_button">
    <property name="geometry">
     <rect>
      <x>128</x>
@@ -200,7 +200,7 @@
     <string>Import</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="audiodelete_button">
    <property name="geometry">
     <rect>
      <x>128</x>
@@ -220,7 +220,7 @@
     <string>Delete</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="tagremove_button">
    <property name="geometry">
     <rect>
      <x>128</x>
@@ -240,7 +240,7 @@
     <string>Remove</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="tagadd_button">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -258,6 +258,50 @@
    </property>
    <property name="text">
     <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="importsuccess_text">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>8</pointsize>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Import Success</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="deletesuccess_text">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>195</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>8</pointsize>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Delete Success</string>
    </property>
   </widget>
  </widget>

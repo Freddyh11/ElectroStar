@@ -1,4 +1,3 @@
-#include "App_Util.h"
 #include "mainwindow.h"
 #include "miniwindow.h"
 

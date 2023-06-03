@@ -7,6 +7,7 @@
 #include <sstream>
 #include <string>
 #include <unordered_map>
+#include <QLineEdit>
 
 using std::cin;
 using std::cout;
@@ -28,15 +29,14 @@ Playlist *selected_playlist{}; // Pointer to the selected playlist (see selectPl
 
 // Core Functions
 
-// Used by classes
-string getString() {
-    string str{};
-    std::getline(cin, str);
+// Used to get strings from on-screen linetext boxes
+string getLinetextString(QLineEdit* linetext) {
+    string str{linetext->text().toStdString()};
     return str;
 }
 
-// Used by classes
-vector<string> getStrings() {
+// Used to get strings from on-screen linetext boxes
+vector<string> getLinetextStrings() {
     string input_string{};
     std::getline(cin, input_string);
     std::istringstream iss(input_string);
@@ -50,7 +50,7 @@ vector<string> getStrings() {
 
 
 // All below functions directly interact with back-end, self-explanatory
-void songImport(string name, vector<string> tags, int weight) {
+void songImport(string name, vector<string> tags={}, int weight={}) {
     Song newsong{name, true, tags, weight};
     app_songlist.insert({name, newsong});
 }

@@ -21,7 +21,8 @@ HEADERS += \
     editpopoutwindow.h \
     mainwindow.h \
     mainwindow_states.h \
-    miniwindow.h
+    miniwindow.h \
+    pause.h
 
 FORMS += \
     editpopoutwindow.ui \
