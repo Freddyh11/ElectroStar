@@ -43,9 +43,11 @@ void MainWindow::setState(MainWindowStates s) { state = s; }
 void MainWindow::on_actionMiniplayer_clicked()
 {
     MiniWindow *miniplayer_window = new MiniWindow();
+    miniplayer_window->setWindowTitle("MiniPlayer");
     miniplayer_window->show();
     close();
 }
+
 
 
 void MainWindow::on_actionEdit_clicked()
@@ -55,15 +57,20 @@ void MainWindow::on_actionEdit_clicked()
         ui->MainScreen_IMG->setPixmap(edit_img);
         ui->frame->setVisible(false);
         this->setState(Edit);
+
+        // Change the window title when entering Edit state
+        this->setWindowTitle("ELECTROSTAR* - Edit");
     }
     else{
         QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
+
+        // Change the window title when returning to Songs state
+        this->setWindowTitle("ELECTROSTAR*");
     }
 }
-
 
 void MainWindow::on_actionVibe_clicked()
 {
@@ -72,12 +79,18 @@ void MainWindow::on_actionVibe_clicked()
         ui->MainScreen_IMG->setPixmap(vibes_img);
         ui->frame->setVisible(false);
         this->setState(Vibes);
+
+        // Change the window title when entering Vibe state
+        this->setWindowTitle("ELECTROSTAR* - Vibe");
     }
     else{
         QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
+
+        // Change the window title when returning to Songs state
+        this->setWindowTitle("ELECTROSTAR*");
     }
 }
 
@@ -88,12 +101,18 @@ void MainWindow::on_actionHelp_clicked()
         ui->MainScreen_IMG->setPixmap(help_img);
         ui->frame->setVisible(false);
         this->setState(Help);
+
+        // Change the window title when entering help state
+        this->setWindowTitle("ELECTROSTAR* - Help");
     }
     else{
         QPixmap songs_img(":/images/MainScreen.png");
         ui->MainScreen_IMG->setPixmap(songs_img);
         ui->frame->setVisible(true);
         this->setState(Songs);
+
+        // Change the window title when returning to Songs state
+        this->setWindowTitle("ELECTROSTAR*");
 
     }
 }
