@@ -1,8 +1,5 @@
-#ifndef ELECTROSTAR_MINIWINDOW_H
-#define ELECTROSTAR_MINIWINDOW_H
-
+#pragma once
 #include <QDialog>
-
 
 namespace Ui {
 class MiniWindow;
@@ -29,4 +26,3 @@ private:
     Ui::MiniWindow *ui;
 };
 
-#endif // ELECTROSTAR_MINIWINDOW_H

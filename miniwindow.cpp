@@ -1,4 +1,4 @@
-#include "ElectroStar_miniwindow.h"
+#include "miniwindow.h"
 #include "ui_miniwindow.h"
 #include "mainwindow.h"
 #include <QCloseEvent>

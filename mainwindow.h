@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include  "mainwindow_states.h"
-#include "ElectroStar_miniwindow.h"
+#include "miniwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
