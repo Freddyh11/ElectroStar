@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include  "mainwindow_states.h"
 #include "miniwindow.h"
+#include "editpopoutwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -33,6 +34,7 @@ private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
     MiniWindow *miniplayer_window = nullptr;
+    EditPopoutWindow *edit_popoutwindow = nullptr;
 
 };
 #endif // MAINWINDOW_H

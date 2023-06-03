@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "miniwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -68,6 +67,12 @@ void MainWindow::on_actionEdit_clicked()
 
         // Change the window title when entering Edit state
         this->setWindowTitle("ELECTROSTAR* - Edit");
+
+        // Open popout window (edit)
+        edit_popoutwindow = new EditPopoutWindow(this);
+        edit_popoutwindow->setWindowTitle("Edit");
+        edit_popoutwindow->setModal(true);
+        edit_popoutwindow->show();
     }
     else{
         QPixmap songs_img(":/images/MainScreen.png");
