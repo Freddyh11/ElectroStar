@@ -5,5 +5,21 @@
         <file>MainScreenEdit.png</file>
         <file>MainScreenHelp.png</file>
         <file>MainScreenVibes.png</file>
+        <file>Cassette Edit.png</file>
+        <file>Cassette Song.png</file>
+        <file>Cassette Tape.png</file>
+        <file>Cassette Vibes.png</file>
+        <file>Cassette.png</file>
+        <file>Home Background.png</file>
+        <file>Menu Background.png</file>
+        <file>Menu Buttons.png</file>
+        <file>Menu Item.png</file>
+        <file>Miniplayer -.png</file>
+        <file>Miniplayer +.png</file>
+        <file>Miniplayer Background.png</file>
+        <file>Miniplayer Buttons.png</file>
+        <file>Miniplayer list.png</file>
+        <file>Miniplayer.png</file>
+        <file>Song.png</file>
     </qresource>
 </RCC>
