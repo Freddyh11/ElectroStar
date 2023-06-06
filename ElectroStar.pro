@@ -9,10 +9,12 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    App_Util.cpp \
     editpopoutwindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    miniwindow.cpp
+    miniwindow.cpp \
+    playpopoutwindow.cpp
 
 HEADERS += \
     App_Util.h \
@@ -22,14 +24,15 @@ HEADERS += \
     mainwindow.h \
     mainwindow_states.h \
     miniwindow.h \
-    pause.h
+    pause.h \
+    playpopoutwindow.h
 
 FORMS += \
     editpopoutwindow.ui \
     mainwindow.ui \
     mainwindow_new.ui \
-    mainwindow_new.ui \
-    miniwindow.ui
+    miniwindow.ui \
+    playpopoutwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

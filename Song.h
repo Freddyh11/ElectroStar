@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <QPlainTextEdit>
 
 using std::string;
 using std::vector;
@@ -56,20 +57,17 @@ public:
         return false;
     }
 
-    void print() {
-        std::cout << "-[Title: " << m_title << "] [Tags: ";
+    void getPrint(string& str) {
+        str.append("-[Title: ");
+        str.append(m_title);
+        str.append("] [Tags: ");
 
         for (auto tag : m_tags) {
-            std::cout << tag;
+            str.append(tag);
             if (tag != *(m_tags.end() - 1))
-                std::cout << ", ";
+                str.append(", ");
         }
-        std::cout << "] [Audio: ";
-        if (m_audiofile)
-            std::cout << "True] ";
-        else
-            std::cout << "False] ";
-        std::cout << "[Weight: " << m_weight << "]\n";
+        str.append("]\n");
     }
 
     friend class Playlist;

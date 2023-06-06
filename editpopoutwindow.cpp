@@ -1,8 +1,7 @@
 #include "editpopoutwindow.h"
 #include "ui_editpopoutwindow.h"
-#include "App_Util.h"
 #include "pause.h"
-#include <iostream> //remove after tested
+#include "App_Util.h"
 
 using std::string;
 

@@ -5,6 +5,7 @@
 #include  "mainwindow_states.h"
 #include "miniwindow.h"
 #include "editpopoutwindow.h"
+#include "playpopoutwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,11 +31,13 @@ private slots:
 
     void on_MiniWindow_closed();
 
+    void on_actionStart_clicked();
+
 private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
     MiniWindow *miniplayer_window = nullptr;
     EditPopoutWindow *edit_popoutwindow = nullptr;
-
+    PlayPopoutWindow *play_popoutwindow = nullptr;
 };
 #endif // MAINWINDOW_H

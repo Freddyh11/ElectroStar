@@ -8,6 +8,7 @@
 #include <string>
 #include <unordered_map>
 #include <QLineEdit>
+#include <QPlainTextEdit>
 
 using std::cin;
 using std::cout;
@@ -22,89 +23,35 @@ using std::vector;
 
 // Global data
 
-unordered_map<string, Song> app_songlist{}; // Global list of songs (see Song.h)
-unordered_map<string, Playlist> app_playlists{}; // Global list of playlists (see Playlist.h)
+extern unordered_map<string, Song> app_songlist; // Global list of songs (see Song.h)
+extern unordered_map<string, Playlist> app_playlists; // Global list of playlists (see Playlist.h)
 
-Playlist *selected_playlist{}; // Pointer to the selected playlist (see selectPlaylistc function below)
+extern Playlist *selected_playlist; // Pointer to the selected playlist (see selectPlaylistc function below)
 
 // Core Functions
 
 // Used to get strings from on-screen linetext boxes
-string getLinetextString(QLineEdit* linetext) {
-    string str{linetext->text().toStdString()};
-    return str;
-}
+string getLinetextString(QLineEdit* linetext);
 
 // Used to get strings from on-screen linetext boxes
-vector<string> getLinetextStrings() {
-    string input_string{};
-    std::getline(cin, input_string);
-    std::istringstream iss(input_string);
-    string buffer{};
-    vector<string> strings{};
-    while (iss >> buffer)
-        strings.push_back(buffer);
-
-    return strings;
-}
+vector<string> getLinetextStrings();
 
 
 // All below functions directly interact with back-end, self-explanatory
-void songImport(string name, vector<string> tags={}, int weight={}) {
-    Song newsong{name, true, tags, weight};
-    app_songlist.insert({name, newsong});
-}
+void songImport(string name, vector<string> tags={}, int weight={});
 
-void songDelete(string name) { app_songlist.erase(name); }
+void songDelete(string name);
 
-void addTag(string name, string tag) { app_songlist[name].addTag(tag); }
+void addTag(string name, string tag);
 
-void removeTag(string name, string tag) { app_songlist[name].removeTag(tag); }
+void removeTag(string name, string tag);
 
-void createPlaylist(string name, vector<Song> songs) {
-    if (!songs.empty()) {
-        Playlist newplaylist(name, songs);
-        app_playlists.insert({name, newplaylist});
-    } else {
-        Playlist newplaylist(name);
-        app_playlists.insert({name, newplaylist});
-    }
-}
+void createPlaylist(string name, vector<Song> songs);
 
-void selectPlaylist(string name) {
-    if (name == "")
-        selected_playlist = nullptr;
-    else if (!(app_playlists.find(name) == app_playlists.end()))
-        selected_playlist = &app_playlists[name];
-}
+void selectPlaylist(string name);
 
-void deletePlaylist(string name) {
-    if (selected_playlist == &app_playlists[name])
-        selected_playlist = nullptr;
+void deletePlaylist(string name);
 
-    app_playlists.erase(name);
-}
+Song lookupSong(string name);
 
-Song lookupSong(string name) {
-    for (auto song : app_songlist) {
-        if (name == song.first)
-            return song.second;
-    }
-
-    return Song();
-}
-
-void playMusic() {
-    if (selected_playlist == nullptr) {
-        std::cout << "\nNo playlist selected, playing all "
-                     "music\n---------------------------------------\n\n";
-        for (auto song : app_songlist) {
-            song.second.print();
-        }
-    } else {
-        std::cout << "\nPlaying selected playlist\n-------------------------\n";
-        selected_playlist->print();
-    }
-
-    std::cout << std::endl;
-}
+void playMusic(QPlainTextEdit* screen_text);

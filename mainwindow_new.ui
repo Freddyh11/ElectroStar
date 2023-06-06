@@ -462,8 +462,8 @@
    <widget class="QGraphicsView" name="Player">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
+      <x>310</x>
+      <y>-4</y>
       <width>432</width>
       <height>470</height>
      </rect>
@@ -493,8 +493,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
+      <x>310</x>
+      <y>-4</y>
       <width>432</width>
       <height>470</height>
      </rect>
@@ -509,8 +509,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
+      <x>310</x>
+      <y>-4</y>
       <width>432</width>
       <height>470</height>
      </rect>
@@ -525,8 +525,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>180</y>
+      <x>400</x>
+      <y>55</y>
       <width>256</width>
       <height>118</height>
      </rect>
@@ -559,45 +559,13 @@
      </palette>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="P_C_Edit">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>432</width>
-      <height>470</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/Cassette Edit.png);</string>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="P_C_Song">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>432</width>
-      <height>470</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/Cassette Song.png);</string>
-    </property>
-   </widget>
    <widget class="QGraphicsView" name="P_Minimize">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>432</width>
-      <height>470</height>
+      <x>655</x>
+      <y>80</y>
+      <width>34</width>
+      <height>29</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -607,24 +575,372 @@
    <widget class="QGraphicsView" name="Background">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>739</width>
-      <height>758</height>
+      <x>-16</x>
+      <y>-7</y>
+      <width>768</width>
+      <height>768</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/Home Background.png);</string>
+     <string notr="true">background-image: url(:/images/Home Background.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="P_C_Vibes">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>-4</y>
+      <width>432</width>
+      <height>470</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Cassette Vibes.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="Cassette">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>430</y>
+      <width>432</width>
+      <height>470</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Cassette.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="C_Vibes">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>430</y>
+      <width>432</width>
+      <height>470</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Cassette Vibes.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="C_Tape_Color">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>490</y>
+      <width>256</width>
+      <height>118</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="C_Tape">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>430</y>
+      <width>432</width>
+      <height>470</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Cassette Tape.png);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="Songlist">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>75</y>
+      <width>244</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(77, 45, 83);</string>
+    </property>
+    <property name="currentRow">
+     <number>-1</number>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P_C_Song">
+    <property name="geometry">
+     <rect>
+      <x>368</x>
+      <y>176</y>
+      <width>53</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Song.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="C_Song">
+    <property name="geometry">
+     <rect>
+      <x>368</x>
+      <y>610</y>
+      <width>53</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Song.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Shuffle">
+    <property name="geometry">
+     <rect>
+      <x>381</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Back">
+    <property name="geometry">
+     <rect>
+      <x>429</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Play">
+    <property name="geometry">
+     <rect>
+      <x>477</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Pause">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 4.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Forwaard">
+    <property name="geometry">
+     <rect>
+      <x>573</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 5.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_Restart">
+    <property name="geometry">
+     <rect>
+      <x>621</x>
+      <y>315</y>
+      <width>50</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Player Button 6.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="M_Clear">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>35</y>
+      <width>50</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Clear.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="M_Songs">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>35</y>
+      <width>50</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Songs.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="M_Search">
+    <property name="geometry">
+     <rect>
+      <x>151</x>
+      <y>35</y>
+      <width>50</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Search.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="M_Edit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>35</y>
+      <width>50</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Edit.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="M_Help">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>35</y>
+      <width>50</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Button Help.png);</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
    <zorder>Background</zorder>
+   <zorder>C_Tape_Color</zorder>
    <zorder>Player</zorder>
    <zorder>P_C_Tape_Color</zorder>
    <zorder>P_Cassette</zorder>
-   <zorder>P_C_Tape</zorder>
-   <zorder>P_C_Edit</zorder>
-   <zorder>P_C_Song</zorder>
+   <zorder>P_C_Vibes</zorder>
+   <zorder>Cassette</zorder>
+   <zorder>C_Vibes</zorder>
+   <zorder>C_Tape</zorder>
+   <zorder>Songlist</zorder>
    <zorder>P_Minimize</zorder>
+   <zorder>P_C_Tape</zorder>
+   <zorder>B_Shuffle</zorder>
+   <zorder>B_Back</zorder>
+   <zorder>B_Play</zorder>
+   <zorder>B_Pause</zorder>
+   <zorder>B_Forwaard</zorder>
+   <zorder>B_Restart</zorder>
+   <zorder>M_Clear</zorder>
+   <zorder>P_C_Song</zorder>
+   <zorder>C_Song</zorder>
+   <zorder>M_Songs</zorder>
+   <zorder>M_Search</zorder>
+   <zorder>M_Edit</zorder>
+   <zorder>M_Help</zorder>
   </widget>
  </widget>
  <resources/>

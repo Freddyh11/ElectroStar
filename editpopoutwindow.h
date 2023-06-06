@@ -2,7 +2,7 @@
 #define EDITPOPOUTWINDOW_H
 
 #include <QDialog>
-
+#include "App_Util.h"
 namespace Ui {
 class EditPopoutWindow;
 }

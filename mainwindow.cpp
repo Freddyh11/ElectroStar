@@ -130,3 +130,13 @@ void MainWindow::on_actionHelp_clicked()
     }
 }
 
+
+void MainWindow::on_actionStart_clicked()
+{
+    // Open popout window (play)
+    play_popoutwindow = new PlayPopoutWindow(this);
+    play_popoutwindow->setWindowTitle("Play");
+    play_popoutwindow->setModal(true);
+    play_popoutwindow->show();
+}
+

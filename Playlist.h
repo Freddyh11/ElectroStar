@@ -3,6 +3,7 @@
 #include "Song.h"
 #include <iostream>
 #include <vector>
+#include <QPlainTextEdit>
 
 using std::string;
 using std::vector;
@@ -32,11 +33,13 @@ public:
         }
     }
 
-    void print() {
-        std::cout << "Name: " << m_name << "\n\n";
+    void getPrint(string& str) {
+        str.append("Name: "" << ");
+        str.append(m_name);
+        str.append("\n\n");
 
         for (auto song : m_songlist) {
-            song.print();
+            song.getPrint(str);
         }
     }
 };
