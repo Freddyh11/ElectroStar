@@ -9,7 +9,8 @@ PlayPopoutWindow::PlayPopoutWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->songs_text->setReadOnly(true);
-
+    ui->songs_text->setWordWrapMode(QTextOption::NoWrap);
+    ui->songs_text->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
     playMusic(ui->songs_text);
 }
 
