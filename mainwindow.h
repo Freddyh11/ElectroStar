@@ -29,6 +29,8 @@ private slots:
 
     void on_M_Help_clicked();
 
+    void on_M_Songs_clicked();
+
     void on_MiniWindow_closed();
 
     void on_B_Play_clicked();

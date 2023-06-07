@@ -39,10 +39,6 @@ void MainWindow::on_MiniWindow_closed()  // this slot is called when MiniWindow 
 
 void MainWindow::on_M_Edit_clicked()
 {
-    static int i{};
-    std::cout << "Clicked " << i << " times...\n";
-    std::cout <<"State before: " << state << std::endl;
-    i++;
     if (state != Edit){
         ui->MenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
@@ -65,13 +61,13 @@ void MainWindow::on_M_Edit_clicked()
         // Change the window title when returning to Songs state
         this->setWindowTitle("ELECTROSTAR*");
     }
-    std::cout <<"State after: " << state << std::endl;
 }
 
 void MainWindow::on_M_Search_clicked()
 {
     if (state != Search){
         ui->MenuBackground->setVisible(true);
+        ui->Songlist->setVisible(false);
         this->setState(Search);
 
         // Change the window title when entering Vibe state
@@ -79,6 +75,7 @@ void MainWindow::on_M_Search_clicked()
     }
     else{
         ui->MenuBackground->setVisible(false);
+        ui->Songlist->setVisible(true);
         this->setState(Songs);
 
         // Change the window title when returning to Songs state
@@ -90,6 +87,7 @@ void MainWindow::on_M_Help_clicked()
 {
     if(state != Help){
         ui->MenuBackground->setVisible(true);
+        ui->Songlist->setVisible(false);
         this->setState(Help);
 
         // Change the window title when entering help state
@@ -97,11 +95,22 @@ void MainWindow::on_M_Help_clicked()
     }
     else{
         ui->MenuBackground->setVisible(false);
+        ui->Songlist->setVisible(true);
         this->setState(Songs);
 
         // Change the window title when returning to Songs state
         this->setWindowTitle("ELECTROSTAR*");
 
+    }
+}
+
+void MainWindow::on_M_Songs_clicked()
+{
+    if(state != Songs){
+        ui->MenuBackground->setVisible(false);
+        ui->Songlist->setVisible(true);
+        this->setState(Songs);
+        this->setWindowTitle("ELECTROSTAR*");
     }
 }
 
