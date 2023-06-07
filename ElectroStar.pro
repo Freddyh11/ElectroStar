@@ -30,7 +30,6 @@ HEADERS += \
 FORMS += \
     editpopoutwindow.ui \
     mainwindow.ui \
-    mainwindow_new.ui \
     miniwindow.ui \
     playpopoutwindow.ui
 

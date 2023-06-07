@@ -21,17 +21,17 @@ public:
     void setState(MainWindowStates s);
 
 private slots:
-    void on_actionMiniplayer_clicked();
+    void on_P_Minimize_clicked();
 
-    void on_actionEdit_clicked();
+    void on_M_Edit_clicked();
 
-    void on_actionVibe_clicked();
+    void on_M_Search_clicked();
 
-    void on_actionHelp_clicked();
+    void on_M_Help_clicked();
 
     void on_MiniWindow_closed();
 
-    void on_actionStart_clicked();
+    void on_B_Play_clicked();
 
 private:
     Ui::MainWindow *ui;

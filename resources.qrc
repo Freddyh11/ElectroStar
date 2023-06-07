@@ -1,25 +1,37 @@
 <RCC>
     <qresource prefix="/images">
-        <file>MiniplayerScreen.png</file>
-        <file>MainScreen.png</file>
-        <file>MainScreenEdit.png</file>
-        <file>MainScreenHelp.png</file>
-        <file>MainScreenVibes.png</file>
-        <file>Cassette Edit.png</file>
-        <file>Cassette Song.png</file>
-        <file>Cassette Tape.png</file>
-        <file>Cassette Vibes.png</file>
-        <file>Cassette.png</file>
-        <file>Home Background.png</file>
-        <file>Menu Background.png</file>
-        <file>Menu Buttons.png</file>
-        <file>Menu Item.png</file>
-        <file>Miniplayer -.png</file>
-        <file>Miniplayer +.png</file>
-        <file>Miniplayer Background.png</file>
-        <file>Miniplayer Buttons.png</file>
-        <file>Miniplayer list.png</file>
-        <file>Miniplayer.png</file>
         <file>Song.png</file>
+        <file>Player Button 6.png</file>
+        <file>Player Button 5.png</file>
+        <file>Player Button 4.png</file>
+        <file>Player Button 3.png</file>
+        <file>Player Button 2.png</file>
+        <file>Player Button 1.png</file>
+        <file>MiniplayerScreen.png</file>
+        <file>Miniplayer.png</file>
+        <file>Miniplayer list.png</file>
+        <file>Miniplayer Buttons.png</file>
+        <file>Miniplayer Background.png</file>
+        <file>Miniplayer +.png</file>
+        <file>Miniplayer -.png</file>
+        <file>Menu Item.png</file>
+        <file>Menu Buttons.png</file>
+        <file>MainScreenVibes.png</file>
+        <file>MainScreenHelp.png</file>
+        <file>MainScreenEdit.png</file>
+        <file>MainScreen.png</file>
+        <file>Home Background.png</file>
+        <file>Cassette.png</file>
+        <file>Cassette Vibes.png</file>
+        <file>Cassette Tape.png</file>
+        <file>Cassette Song.png</file>
+        <file>Cassette Edit.png</file>
+        <file>Button Songs.png</file>
+        <file>Button Song.png</file>
+        <file>Button Search.png</file>
+        <file>Button Help.png</file>
+        <file>Button Edit.png</file>
+        <file>Button Clear.png</file>
+        <file>Menu Background.png</file>
     </qresource>
 </RCC>

@@ -72,12 +72,12 @@ Song lookupSong(string name) {
 void playMusic(QPlainTextEdit* screen_text) {
     string str{};
     if (selected_playlist == nullptr) {
-        str.append("\nNo playlist selected, playing all music\n");
+        str.append("No playlist selected, playing all music\n");
         for (auto song : app_songlist) {
             song.second.getPrint(str);
         }
     } else {
-        str.append("\nPlaying selected playlist\n");
+        str.append("Playing selected playlist\n");
         selected_playlist->getPrint(str);
     }
 
