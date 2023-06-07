@@ -12,30 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->MenuBackground->setVisible(false);
     ui->P_C_Vibes->setVisible(false);
     ui->C_Vibes->setVisible(false);
-
-    /*QPixmap mainscreen_img(":/images/MainScreen.png");
-    ui->MainScreen_IMG->setPixmap(mainscreen_img);
-
-    ui->actionBack->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionClear->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionEject->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionHelp->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionNext->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionPause->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionEdit->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionStart->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionStop->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionVibe->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->actionMiniplayer->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_2->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_3->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_4->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_5->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_6->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_7->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_8->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
-    ui->pushButton_9->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");*/
 }
 
 MainWindow::~MainWindow()
