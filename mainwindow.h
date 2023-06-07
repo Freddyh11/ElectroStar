@@ -35,6 +35,8 @@ private slots:
 
     void on_B_Play_clicked();
 
+    void menuImagesReset();
+
 private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};

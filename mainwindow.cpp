@@ -9,7 +9,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->MenuBackground->setVisible(false);
+    ui->SearchMenuBackground->setVisible(false);
+    ui->EditMenuBackground->setVisible(false);
+    ui->EditVibesMenuBackground->setVisible(false);
+    ui->HelpMenuBackground->setVisible(false);
     ui->P_C_Vibes->setVisible(false);
     ui->C_Vibes->setVisible(false);
 }
@@ -20,6 +23,15 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::setState(MainWindowStates s) { state = s; }
+
+void MainWindow::menuImagesReset(){
+    ui->SearchMenuBackground->setVisible(false);
+    ui->EditMenuBackground->setVisible(false);
+    ui->EditVibesMenuBackground->setVisible(false);
+    ui->HelpMenuBackground->setVisible(false);
+    ui->Songlist->setVisible(false);
+    ui->TapeRackOverlay->setVisible(false);
+}
 
 void MainWindow::on_P_Minimize_clicked()
 {
@@ -39,9 +51,11 @@ void MainWindow::on_MiniWindow_closed()  // this slot is called when MiniWindow 
 
 void MainWindow::on_M_Edit_clicked()
 {
+    menuImagesReset();
     if (state != Edit){
-        ui->MenuBackground->setVisible(true);
+        ui->EditMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
+        ui->TapeRackOverlay->setVisible(false);
         this->setState(Edit);
 
         // Change the window title when entering Edit state
@@ -54,8 +68,9 @@ void MainWindow::on_M_Edit_clicked()
         edit_popoutwindow->show();
     }
     else{
-        ui->MenuBackground->setVisible(false);
+        ui->EditMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
+        ui->TapeRackOverlay->setVisible(true);
         this->setState(Songs);
 
         // Change the window title when returning to Songs state
@@ -65,17 +80,20 @@ void MainWindow::on_M_Edit_clicked()
 
 void MainWindow::on_M_Search_clicked()
 {
+    menuImagesReset();
     if (state != Search){
-        ui->MenuBackground->setVisible(true);
+        ui->SearchMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
+        ui->TapeRackOverlay->setVisible(false);
         this->setState(Search);
 
         // Change the window title when entering Vibe state
         this->setWindowTitle("ELECTROSTAR* - Search");
     }
     else{
-        ui->MenuBackground->setVisible(false);
+        ui->SearchMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
+        ui->TapeRackOverlay->setVisible(true);
         this->setState(Songs);
 
         // Change the window title when returning to Songs state
@@ -85,17 +103,21 @@ void MainWindow::on_M_Search_clicked()
 
 void MainWindow::on_M_Help_clicked()
 {
+    menuImagesReset();
     if(state != Help){
-        ui->MenuBackground->setVisible(true);
+        ui->HelpMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
+        ui->Songlist->setVisible(false);
+        ui->TapeRackOverlay->setVisible(false);
         this->setState(Help);
 
         // Change the window title when entering help state
         this->setWindowTitle("ELECTROSTAR* - Help");
     }
     else{
-        ui->MenuBackground->setVisible(false);
+        ui->HelpMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
+        ui->TapeRackOverlay->setVisible(true);
         this->setState(Songs);
 
         // Change the window title when returning to Songs state
@@ -107,8 +129,9 @@ void MainWindow::on_M_Help_clicked()
 void MainWindow::on_M_Songs_clicked()
 {
     if(state != Songs){
-        ui->MenuBackground->setVisible(false);
+        menuImagesReset();
         ui->Songlist->setVisible(true);
+        ui->TapeRackOverlay->setVisible(true);
         this->setState(Songs);
         this->setWindowTitle("ELECTROSTAR*");
     }
@@ -123,3 +146,4 @@ void MainWindow::on_B_Play_clicked()
     play_popoutwindow->setModal(true);
     play_popoutwindow->show();
 }
+

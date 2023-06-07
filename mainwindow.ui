@@ -903,19 +903,6 @@
      <string/>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="MenuBackground">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>72</y>
-      <width>250</width>
-      <height>678</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/images/Menu Background.png);</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="P_Minimize">
     <property name="geometry">
      <rect>
@@ -930,6 +917,71 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="EditMenuBackground">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>72</y>
+      <width>250</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Edit Menu Background.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="SearchMenuBackground">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>72</y>
+      <width>250</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Search Menu Background.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="EditVibesMenuBackground">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>72</y>
+      <width>250</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Edit Vibes Menu Background.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="HelpMenuBackground">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>72</y>
+      <width>250</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Help Menu Background.png);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="TapeRackOverlay">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>72</y>
+      <width>250</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/Tape Rack Overlay.png);</string>
     </property>
    </widget>
    <zorder>Background</zorder>
@@ -956,8 +1008,12 @@
    <zorder>M_Search</zorder>
    <zorder>M_Edit</zorder>
    <zorder>M_Help</zorder>
-   <zorder>MenuBackground</zorder>
    <zorder>P_Minimize</zorder>
+   <zorder>EditMenuBackground</zorder>
+   <zorder>SearchMenuBackground</zorder>
+   <zorder>EditVibesMenuBackground</zorder>
+   <zorder>HelpMenuBackground</zorder>
+   <zorder>TapeRackOverlay</zorder>
   </widget>
  </widget>
  <resources/>

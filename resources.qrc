@@ -33,5 +33,10 @@
         <file>Button Edit.png</file>
         <file>Button Clear.png</file>
         <file>Menu Background.png</file>
+        <file>Search Menu Background.png</file>
+        <file>Help Menu Background.png</file>
+        <file>Edit Vibes Menu Background.png</file>
+        <file>Edit Menu Background.png</file>
+        <file>Tape Rack Overlay.png</file>
     </qresource>
 </RCC>
