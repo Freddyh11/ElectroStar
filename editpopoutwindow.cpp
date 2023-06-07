@@ -13,6 +13,8 @@ EditPopoutWindow::EditPopoutWindow(QWidget *parent) :
 
     ui->importsuccess_text->setVisible(false);
     ui->deletesuccess_text->setVisible(false);
+    ui->addsuccess_text->setVisible(false);
+    ui->removesuccess_text->setVisible(false);
 }
 
 EditPopoutWindow::~EditPopoutWindow()
@@ -50,12 +52,30 @@ void EditPopoutWindow::on_audiodelete_button_clicked()
 
 void EditPopoutWindow::on_tagremove_button_clicked()
 {
-
+    string filename_str{getLinetextString(ui->tagedit_filename_linetext)};
+    string tagname_str{getLinetextString(ui->tagedit_tagname_linetext)};
+    if (filename_str.empty() || tagname_str.empty())
+        return;
+    removeTag(filename_str, tagname_str);
+    ui->tagedit_filename_linetext->setText("");
+    ui->tagedit_tagname_linetext->setText("");
+    ui->removesuccess_text->setVisible(true);
+    pause();
+    ui->removesuccess_text->setVisible(false);
 }
 
 
 void EditPopoutWindow::on_tagadd_button_clicked()
 {
-
+    string filename_str{getLinetextString(ui->tagedit_filename_linetext)};
+    string tagname_str{getLinetextString(ui->tagedit_tagname_linetext)};
+    if (filename_str.empty() || tagname_str.empty())
+        return;
+    addTag(filename_str, tagname_str);
+    ui->tagedit_filename_linetext->setText("");
+    ui->tagedit_tagname_linetext->setText("");
+    ui->addsuccess_text->setVisible(true);
+    pause();
+    ui->addsuccess_text->setVisible(false);
 }
 
