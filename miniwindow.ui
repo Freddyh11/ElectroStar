@@ -6,41 +6,376 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>431</width>
-    <height>470</height>
+    <width>422</width>
+    <height>460</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="actionMainwindow">
+  <widget class="QGraphicsView" name="P_C_Tape">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>348</x>
-     <y>83</y>
-     <width>29</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="MiniScreen_IMG">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>431</width>
+     <x>-5</x>
+     <y>-4</y>
+     <width>432</width>
      <height>470</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Cassette Tape.png);</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Player">
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-4</y>
+     <width>432</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Miniplayer.png);</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="P_Cassette">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-4</y>
+     <width>432</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Cassette.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="P_C_Song">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>176</y>
+     <width>53</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Button Song.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <zorder>MiniScreen_IMG</zorder>
-  <zorder>actionMainwindow</zorder>
+  <widget class="QGraphicsView" name="P_C_Vibes">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-4</y>
+     <width>432</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Cassette Vibes.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="P_Maximize">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>80</y>
+     <width>34</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Miniplayer +.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="P_C_Tape_Color">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>55</y>
+     <width>256</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>170</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>170</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="M_Help">
+   <property name="geometry">
+    <rect>
+     <x>234</x>
+     <y>412</y>
+     <width>50</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Button Help.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="M_Clear">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>412</y>
+     <width>50</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Button Clear.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="M_Search">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>412</y>
+     <width>50</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Button Search.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-5</y>
+     <width>432</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Miniplayer Background.png);</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="Menu">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>395</y>
+     <width>175</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>169</red>
+         <green>69</green>
+         <blue>134</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>169</red>
+         <green>69</green>
+         <blue>134</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Play">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Back">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Pause">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 4.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Forwaard">
+   <property name="geometry">
+    <rect>
+     <x>258</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 5.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Shuffle">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_Restart">
+   <property name="geometry">
+    <rect>
+     <x>306</x>
+     <y>315</y>
+     <width>50</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/Player Button 6.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>Background</zorder>
+  <zorder>Menu</zorder>
+  <zorder>Player</zorder>
+  <zorder>P_C_Tape_Color</zorder>
+  <zorder>P_C_Tape</zorder>
+  <zorder>P_C_Vibes</zorder>
+  <zorder>P_Cassette</zorder>
+  <zorder>P_Maximize</zorder>
+  <zorder>P_C_Song</zorder>
+  <zorder>M_Help</zorder>
+  <zorder>M_Search</zorder>
+  <zorder>M_Clear</zorder>
+  <zorder>B_Play</zorder>
+  <zorder>B_Back</zorder>
+  <zorder>B_Pause</zorder>
+  <zorder>B_Forwaard</zorder>
+  <zorder>B_Shuffle</zorder>
+  <zorder>B_Restart</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -40,7 +40,7 @@ void MainWindow::menuImagesReset(){
 void MainWindow::on_P_Minimize_clicked()
 {
    miniplayer_window = new MiniWindow(this);
-   miniplayer_window->setWindowTitle("MiniPlayer");
+   miniplayer_window->setWindowTitle("ELECTROSTAR* - MiniPlayer");
    miniplayer_window->show();
    this->hide();
 }
@@ -68,7 +68,6 @@ void MainWindow::on_M_Edit_clicked()
         // Open popout window (edit)
         edit_popoutwindow = new EditPopoutWindow(this);
         edit_popoutwindow->setWindowTitle("Edit");
-        edit_popoutwindow->setModal(true);
         edit_popoutwindow->show();
     }
     else{
@@ -147,7 +146,6 @@ void MainWindow::on_B_Play_clicked()
     // Open popout window (play)
     play_popoutwindow = new PlayPopoutWindow(this);
     play_popoutwindow->setWindowTitle("Play");
-    play_popoutwindow->setModal(true);
     play_popoutwindow->show();
 }
 
