@@ -90,6 +90,11 @@ void MainWindow::on_M_Search_clicked()
         ui->TapeRackOverlay->setVisible(false);
         this->setMenuState(View_Search);
 
+        // Open popout window (search)
+        search_popoutwindow = new SearchPopoutWindow(this);
+        search_popoutwindow->setWindowTitle("Search");
+        search_popoutwindow->show();
+
         // Change the window title when entering Vibe state
         this->setWindowTitle("ELECTROSTAR* - Search");
     }
