@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>250</width>
-    <height>400</height>
+    <height>540</height>
    </rect>
   </property>
   <property name="font">
@@ -346,6 +346,117 @@
    </property>
    <property name="text">
     <string>Add Success</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>375</y>
+     <width>135</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro</family>
+     <pointsize>9</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Create Playlist</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>415</y>
+     <width>42</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>455</y>
+     <width>42</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Songs</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="playlist_name_linetext">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>415</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="playlist_songs_linetext">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>455</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="playlistcreate_button">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>482</y>
+     <width>85</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="createsuccess_text">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>485</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>8</pointsize>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Create Success</string>
    </property>
   </widget>
  </widget>

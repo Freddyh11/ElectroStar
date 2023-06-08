@@ -4,6 +4,7 @@
 #include "App_Util.h"
 
 using std::string;
+using std::vector;
 
 EditPopoutWindow::EditPopoutWindow(QWidget *parent) :
     QDialog(parent),
@@ -15,6 +16,7 @@ EditPopoutWindow::EditPopoutWindow(QWidget *parent) :
     ui->deletesuccess_text->setVisible(false);
     ui->addsuccess_text->setVisible(false);
     ui->removesuccess_text->setVisible(false);
+    ui->createsuccess_text->setVisible(false);
 }
 
 EditPopoutWindow::~EditPopoutWindow()
@@ -77,5 +79,25 @@ void EditPopoutWindow::on_tagadd_button_clicked()
     ui->addsuccess_text->setVisible(true);
     pause();
     ui->addsuccess_text->setVisible(false);
+}
+
+
+void EditPopoutWindow::on_playlistcreate_button_clicked()
+{
+    string name_str{getLinetextString(ui->playlist_name_linetext)};
+    vector<string> songs_strvec{getLinetextStrings(ui->playlist_songs_linetext)};
+    if (name_str.empty() || songs_strvec.empty())
+        return;
+    vector<Song> songs_vec{};
+    for (string str : songs_strvec){
+        Song song{lookupSong(str)};
+        songs_vec.push_back(song);
+    }
+    ui->playlist_name_linetext->setText("");
+    ui->playlist_songs_linetext->setText("");
+    createPlaylist(name_str, songs_vec);
+    ui->createsuccess_text->setVisible(true);
+    pause();
+    ui->createsuccess_text->setVisible(false);
 }
 

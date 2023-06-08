@@ -11,10 +11,9 @@ string getLinetextString(QLineEdit* linetext) {
 }
 
 // Used to get strings from on-screen linetext boxes
-vector<string> getLinetextStrings() {
-    string input_string{};
-    std::getline(cin, input_string);
-    std::istringstream iss(input_string);
+vector<string> getLinetextStrings(QLineEdit* linetext) {
+    string str{linetext->text().toStdString()};
+    std::istringstream iss(str);
     string buffer{};
     vector<string> strings{};
     while (iss >> buffer)
