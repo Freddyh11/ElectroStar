@@ -126,6 +126,7 @@ void MainWindow::on_M_Help_clicked()
     }
 }
 
+//Menu Songs
 void MainWindow::on_M_Songs_clicked()
 {
     if(state != Songs){
@@ -137,7 +138,6 @@ void MainWindow::on_M_Songs_clicked()
     }
 }
 
-
 void MainWindow::on_B_Play_clicked()
 {
     // Open popout window (play)
@@ -145,5 +145,39 @@ void MainWindow::on_B_Play_clicked()
     play_popoutwindow->setWindowTitle("Play");
     play_popoutwindow->setModal(true);
     play_popoutwindow->show();
+}
+
+
+void MainWindow::on_P_C_Song_clicked()
+{
+    if(state != P_C_Songs){
+        ui->P_C_Tape->setVisible(false);
+        ui->P_C_Vibes->setVisible(true);
+        this->setState(P_C_Songs);
+        this->setWindowTitle("ELECTROSTAR* - PC Songs");
+    }
+    else{
+        ui->P_C_Tape->setVisible(true);
+        ui->P_C_Vibes->setVisible(false);
+        this->setState(P_C_Songs);
+        this->setWindowTitle("ELECTROSTAR*");
+        }
+    }
+
+
+void MainWindow::on_C_Song_clicked()
+{
+        if(state != C_Songs){
+        ui->C_Tape->setVisible(false);
+        ui->C_Vibes->setVisible(true);
+        this->setState(C_Songs);
+        this->setWindowTitle("ELECTROSTAR* - PC Songs");
+        }
+        else{
+        ui->C_Tape->setVisible(true);
+        ui->C_Vibes->setVisible(false);
+        this->setState(C_Songs);
+        this->setWindowTitle("ELECTROSTAR*");
+        }
 }
 

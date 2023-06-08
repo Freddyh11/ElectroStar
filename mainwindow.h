@@ -37,6 +37,10 @@ private slots:
 
     void menuImagesReset();
 
+    void on_P_C_Song_clicked();
+
+    void on_C_Song_clicked();
+
 private:
     Ui::MainWindow *ui;
     MainWindowStates state{Songs};
