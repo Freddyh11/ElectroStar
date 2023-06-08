@@ -22,7 +22,7 @@ HEADERS += \
     Song.h \
     editpopoutwindow.h \
     mainwindow.h \
-    mainwindow_states.h \
+    mainwindowmenu_states.h \
     miniwindow.h \
     pause.h \
     playpopoutwindow.h
