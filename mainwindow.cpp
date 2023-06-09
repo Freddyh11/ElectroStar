@@ -77,7 +77,7 @@ void MainWindow::on_M_Edit_clicked()
         this->setWindowTitle("ELECTROSTAR*");
     }
 }
-
+//Changes the state of the Search Button
 void MainWindow::on_M_Search_clicked()
 {
     menuImagesReset();
@@ -100,7 +100,7 @@ void MainWindow::on_M_Search_clicked()
         this->setWindowTitle("ELECTROSTAR*");
     }
 }
-
+//Changes the state of the Help Button
 void MainWindow::on_M_Help_clicked()
 {
     menuImagesReset();
@@ -137,7 +137,7 @@ void MainWindow::on_M_Songs_clicked()
         this->setWindowTitle("ELECTROSTAR*");
     }
 }
-
+//Changes the state of the Play Button
 void MainWindow::on_B_Play_clicked()
 {
     // Open popout window (play)
@@ -147,7 +147,7 @@ void MainWindow::on_B_Play_clicked()
     play_popoutwindow->show();
 }
 
-
+//Changes the state of the Player cassette
 void MainWindow::on_P_C_Song_clicked()
 {
     if(state != P_C_Songs){
@@ -164,7 +164,7 @@ void MainWindow::on_P_C_Song_clicked()
         }
     }
 
-
+//Changes the state of the cassette
 void MainWindow::on_C_Song_clicked()
 {
         if(state != C_Songs){
