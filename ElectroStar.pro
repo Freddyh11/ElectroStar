@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     App_Util.cpp \
     editpopoutwindow.cpp \
+    helppopoutwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     miniwindow.cpp \
@@ -23,6 +24,7 @@ HEADERS += \
     Playlist.h \
     Song.h \
     editpopoutwindow.h \
+    helppopoutwindow.h \
     mainwindow.h \
     mainwindowmenu_states.h \
     miniwindow.h \
@@ -32,6 +34,7 @@ HEADERS += \
 
 FORMS += \
     editpopoutwindow.ui \
+    helppopoutwindow.ui \
     mainwindow.ui \
     miniwindow.ui \
     playpopoutwindow.ui \

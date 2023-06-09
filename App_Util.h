@@ -55,3 +55,5 @@ void deletePlaylist(string name);
 Song lookupSong(string name);
 
 void playMusic(QPlainTextEdit* screen_text);
+
+void showHelp();
