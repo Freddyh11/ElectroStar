@@ -10,10 +10,7 @@ MiniWindow::MiniWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QPixmap miniscreen_img(":/images/MiniplayerScreen.png");
-    ui->MiniScreen_IMG->setPixmap(miniscreen_img);
-
-    ui->actionMainwindow->setStyleSheet("QPushButton { background-color: rgba(255, 255, 255, 50); }");
+    ui->P_C_Vibes->setVisible(false);
 }
 
 MiniWindow::~MiniWindow()
@@ -21,7 +18,9 @@ MiniWindow::~MiniWindow()
     delete ui;
 }
 
-void MiniWindow::on_actionMainwindow_clicked()
+void MiniWindow::setPlayerCassetteisSong(bool s){ player_cassette_state_isSong = s; }
+
+void MiniWindow::on_P_Maximize_clicked()
 {
     MainWindow *main_window = new MainWindow();
     main_window->setWindowTitle("ELECTROSTAR*");
@@ -33,5 +32,28 @@ void MiniWindow::closeEvent(QCloseEvent *event)
 {
     emit closed();
     QDialog::closeEvent(event);
+}
+
+
+void MiniWindow::on_B_Play_clicked()
+{
+    // Open popout window (play)
+    play_popoutwindow = new PlayPopoutWindow(this);
+    play_popoutwindow->setWindowTitle("Play");
+    play_popoutwindow->show();
+}
+
+void MiniWindow::on_P_C_Song_clicked()
+{
+        if(player_cassette_state_isSong){
+            ui->P_C_Tape->setVisible(false);
+            ui->P_C_Vibes->setVisible(true);
+            this->setPlayerCassetteisSong(false);
+        }
+        else{
+            ui->P_C_Tape->setVisible(true);
+            ui->P_C_Vibes->setVisible(false);
+            this->setPlayerCassetteisSong(true);
+        }
 }
 

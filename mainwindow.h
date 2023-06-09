@@ -2,10 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include  "mainwindow_states.h"
+#include "mainwindowmenu_states.h"
 #include "miniwindow.h"
 #include "editpopoutwindow.h"
 #include "playpopoutwindow.h"
+#include "searchpopoutwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,7 +19,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void setState(MainWindowStates s);
+    void setMenuState(MainWindowMenuStates s);
+    void setPlayerCassetteisSong(bool s);
+    void setCassetteisSong(bool s);
 
 private slots:
     void on_P_Minimize_clicked();
@@ -43,9 +46,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    MainWindowStates state{Songs};
+    MainWindowMenuStates menu_state{View_Songs};
+    bool player_cassette_state_isSong{true};
+    bool cassette_state_isSong{true};
     MiniWindow *miniplayer_window = nullptr;
     EditPopoutWindow *edit_popoutwindow = nullptr;
     PlayPopoutWindow *play_popoutwindow = nullptr;
+    SearchPopoutWindow *search_popoutwindow = nullptr;
 };
 #endif // MAINWINDOW_H

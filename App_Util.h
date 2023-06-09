@@ -34,7 +34,7 @@ extern Playlist *selected_playlist; // Pointer to the selected playlist (see sel
 string getLinetextString(QLineEdit* linetext);
 
 // Used to get strings from on-screen linetext boxes
-vector<string> getLinetextStrings();
+vector<string> getLinetextStrings(QLineEdit* linetext);
 
 
 // All below functions directly interact with back-end, self-explanatory

@@ -24,6 +24,8 @@ private slots:
 
     void on_tagadd_button_clicked();
 
+    void on_playlistcreate_button_clicked();
+
 private:
     Ui::EditPopoutWindow *ui;
 };

@@ -22,7 +22,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::setState(MainWindowStates s) { state = s; }
+void MainWindow::setMenuState(MainWindowMenuStates s) { menu_state = s; }
+
+void MainWindow::setPlayerCassetteisSong(bool s) {player_cassette_state_isSong = s; }
+
+void MainWindow::setCassetteisSong(bool s) {cassette_state_isSong = s; }
 
 void MainWindow::menuImagesReset(){
     ui->SearchMenuBackground->setVisible(false);
@@ -36,7 +40,7 @@ void MainWindow::menuImagesReset(){
 void MainWindow::on_P_Minimize_clicked()
 {
    miniplayer_window = new MiniWindow(this);
-   miniplayer_window->setWindowTitle("MiniPlayer");
+   miniplayer_window->setWindowTitle("ELECTROSTAR* - MiniPlayer");
    miniplayer_window->show();
    this->hide();
 }
@@ -52,11 +56,11 @@ void MainWindow::on_MiniWindow_closed()  // this slot is called when MiniWindow 
 void MainWindow::on_M_Edit_clicked()
 {
     menuImagesReset();
-    if (state != Edit){
+    if (menu_state != View_Songs_Edit){
         ui->EditMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
         ui->TapeRackOverlay->setVisible(false);
-        this->setState(Edit);
+        this->setMenuState(View_Songs_Edit);
 
         // Change the window title when entering Edit state
         this->setWindowTitle("ELECTROSTAR* - Edit");
@@ -64,14 +68,13 @@ void MainWindow::on_M_Edit_clicked()
         // Open popout window (edit)
         edit_popoutwindow = new EditPopoutWindow(this);
         edit_popoutwindow->setWindowTitle("Edit");
-        edit_popoutwindow->setModal(true);
         edit_popoutwindow->show();
     }
     else{
         ui->EditMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
         ui->TapeRackOverlay->setVisible(true);
-        this->setState(Songs);
+        this->setMenuState(View_Songs);
 
         // Change the window title when returning to Songs state
         this->setWindowTitle("ELECTROSTAR*");
@@ -81,11 +84,16 @@ void MainWindow::on_M_Edit_clicked()
 void MainWindow::on_M_Search_clicked()
 {
     menuImagesReset();
-    if (state != Search){
+    if (menu_state != View_Search){
         ui->SearchMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
         ui->TapeRackOverlay->setVisible(false);
-        this->setState(Search);
+        this->setMenuState(View_Search);
+
+        // Open popout window (search)
+        search_popoutwindow = new SearchPopoutWindow(this);
+        search_popoutwindow->setWindowTitle("Search");
+        search_popoutwindow->show();
 
         // Change the window title when entering Vibe state
         this->setWindowTitle("ELECTROSTAR* - Search");
@@ -94,7 +102,7 @@ void MainWindow::on_M_Search_clicked()
         ui->SearchMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
         ui->TapeRackOverlay->setVisible(true);
-        this->setState(Songs);
+        this->setMenuState(View_Songs);
 
         // Change the window title when returning to Songs state
         this->setWindowTitle("ELECTROSTAR*");
@@ -104,12 +112,12 @@ void MainWindow::on_M_Search_clicked()
 void MainWindow::on_M_Help_clicked()
 {
     menuImagesReset();
-    if(state != Help){
+    if(menu_state != View_Help){
         ui->HelpMenuBackground->setVisible(true);
         ui->Songlist->setVisible(false);
         ui->Songlist->setVisible(false);
         ui->TapeRackOverlay->setVisible(false);
-        this->setState(Help);
+        this->setMenuState(View_Help);
 
         // Change the window title when entering help state
         this->setWindowTitle("ELECTROSTAR* - Help");
@@ -118,7 +126,7 @@ void MainWindow::on_M_Help_clicked()
         ui->HelpMenuBackground->setVisible(false);
         ui->Songlist->setVisible(true);
         ui->TapeRackOverlay->setVisible(true);
-        this->setState(Songs);
+        this->setMenuState(View_Songs);
 
         // Change the window title when returning to Songs state
         this->setWindowTitle("ELECTROSTAR*");
@@ -129,11 +137,11 @@ void MainWindow::on_M_Help_clicked()
 //Menu Songs
 void MainWindow::on_M_Songs_clicked()
 {
-    if(state != Songs){
+    if(menu_state != View_Songs){
         menuImagesReset();
         ui->Songlist->setVisible(true);
         ui->TapeRackOverlay->setVisible(true);
-        this->setState(Songs);
+        this->setMenuState(View_Songs);
         this->setWindowTitle("ELECTROSTAR*");
     }
 }
@@ -143,41 +151,36 @@ void MainWindow::on_B_Play_clicked()
     // Open popout window (play)
     play_popoutwindow = new PlayPopoutWindow(this);
     play_popoutwindow->setWindowTitle("Play");
-    play_popoutwindow->setModal(true);
     play_popoutwindow->show();
 }
 
 //Changes the state of the Player cassette
 void MainWindow::on_P_C_Song_clicked()
 {
-    if(state != P_C_Songs){
+    if(player_cassette_state_isSong){
         ui->P_C_Tape->setVisible(false);
         ui->P_C_Vibes->setVisible(true);
-        this->setState(P_C_Songs);
-        this->setWindowTitle("ELECTROSTAR* - PC Songs");
+        this->setPlayerCassetteisSong(false);
     }
     else{
         ui->P_C_Tape->setVisible(true);
         ui->P_C_Vibes->setVisible(false);
-        this->setState(P_C_Songs);
-        this->setWindowTitle("ELECTROSTAR*");
-        }
+        this->setPlayerCassetteisSong(true);
     }
+}
 
 //Changes the state of the cassette
 void MainWindow::on_C_Song_clicked()
 {
-        if(state != C_Songs){
+    if(cassette_state_isSong){
         ui->C_Tape->setVisible(false);
         ui->C_Vibes->setVisible(true);
-        this->setState(C_Songs);
-        this->setWindowTitle("ELECTROSTAR* - PC Songs");
-        }
-        else{
+        this->setCassetteisSong(false);
+    }
+    else{
         ui->C_Tape->setVisible(true);
         ui->C_Vibes->setVisible(false);
-        this->setState(C_Songs);
-        this->setWindowTitle("ELECTROSTAR*");
-        }
+        this->setCassetteisSong(true);
+    }
 }
 

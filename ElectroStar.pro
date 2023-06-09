@@ -14,7 +14,9 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     miniwindow.cpp \
-    playpopoutwindow.cpp
+    pause.cpp \
+    playpopoutwindow.cpp \
+    searchpopoutwindow.cpp
 
 HEADERS += \
     App_Util.h \
@@ -22,16 +24,18 @@ HEADERS += \
     Song.h \
     editpopoutwindow.h \
     mainwindow.h \
-    mainwindow_states.h \
+    mainwindowmenu_states.h \
     miniwindow.h \
     pause.h \
-    playpopoutwindow.h
+    playpopoutwindow.h \
+    searchpopoutwindow.h
 
 FORMS += \
     editpopoutwindow.ui \
     mainwindow.ui \
     miniwindow.ui \
-    playpopoutwindow.ui
+    playpopoutwindow.ui \
+    searchpopoutwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
