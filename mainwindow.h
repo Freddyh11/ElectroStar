@@ -2,11 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "helppopoutwindow.h"
 #include "mainwindowmenu_states.h"
 #include "miniwindow.h"
 #include "editpopoutwindow.h"
 #include "playpopoutwindow.h"
 #include "searchpopoutwindow.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -53,5 +55,6 @@ private:
     EditPopoutWindow *edit_popoutwindow = nullptr;
     PlayPopoutWindow *play_popoutwindow = nullptr;
     SearchPopoutWindow *search_popoutwindow = nullptr;
+    HelpPopoutWindow *help_popoutwindow = nullptr;
 };
 #endif // MAINWINDOW_H

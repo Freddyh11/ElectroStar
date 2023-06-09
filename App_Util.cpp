@@ -82,3 +82,8 @@ void playMusic(QPlainTextEdit* screen_text) {
 
     screen_text->setPlainText(QString::fromStdString(str));
 }
+
+
+void showHelp() {
+
+}

@@ -121,6 +121,11 @@ void MainWindow::on_M_Help_clicked()
 
         // Change the window title when entering help state
         this->setWindowTitle("ELECTROSTAR* - Help");
+
+        // Open popout window (help)
+        help_popoutwindow = new HelpPopoutWindow(this);
+        help_popoutwindow->setWindowTitle("Help");
+        help_popoutwindow->show();
     }
     else{
         ui->HelpMenuBackground->setVisible(false);
